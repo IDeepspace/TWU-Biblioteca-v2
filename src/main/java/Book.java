@@ -4,23 +4,20 @@ public class Book {
   private String name;
   private String author;
   private int year;
-  private boolean checkoutStatus;
 
   public Book() {}
 
-  public Book(String name, String author, int year, boolean checkoutStatus) {
+  public Book(String name, String author, int year) {
     this.name = name;
     this.author = author;
     this.year = year;
-    this.checkoutStatus = checkoutStatus;
   }
 
-  public Book(Long id, String name, String author, int year, boolean checkoutStatus) {
+  public Book(Long id, String name, String author, int year) {
     this.id = id;
     this.name = name;
     this.author = author;
     this.year = year;
-    this.checkoutStatus = checkoutStatus;
   }
 
   public Long getId() {
@@ -55,11 +52,9 @@ public class Book {
     this.year = year;
   }
 
-  public boolean isCheckoutStatus() {
-    return checkoutStatus;
+  @Override
+  public String toString(){
+    return String.format("%s, %s, %s\n",name, author, year);
   }
 
-  public void setCheckoutStatus(boolean checkoutStatus) {
-    this.checkoutStatus = checkoutStatus;
-  }
 }
