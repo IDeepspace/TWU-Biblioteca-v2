@@ -8,6 +8,13 @@ public class Book {
 
   public Book() {}
 
+  public Book(String name, String author, int year, boolean checkoutStatus) {
+    this.name = name;
+    this.author = author;
+    this.year = year;
+    this.checkoutStatus = checkoutStatus;
+  }
+
   public Book(Long id, String name, String author, int year, boolean checkoutStatus) {
     this.id = id;
     this.name = name;
