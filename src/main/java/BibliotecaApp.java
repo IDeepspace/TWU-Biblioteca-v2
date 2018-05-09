@@ -25,6 +25,10 @@ public class BibliotecaApp {
 
   public static List<Book> bookList() {
     List<Book> bookList = new ArrayList<>();
+    Book book1 = new Book("book1", "xiaoMing", 2015);
+    bookList.add(book1);
+    Book book2 = new Book("book2", "xiaoHong", 2016);
+    bookList.add(book2);
     return bookList;
   }
 
