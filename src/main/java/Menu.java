@@ -5,14 +5,11 @@ public class Menu {
   private Bookstore bookstore;
   private PrintStream printStream;
   private InputReader inputReader;
-  private Welcome welcome;
 
-  public Menu(Bookstore bookstore, java.io.PrintStream printStream, InputReader inputReader,
-      Welcome welcome) {
+  public Menu(Bookstore bookstore, PrintStream printStream, InputReader inputReader) {
     this.bookstore = bookstore;
     this.printStream = printStream;
     this.inputReader = inputReader;
-    this.welcome = welcome;
   }
 
   public void displayMenu() {
@@ -25,9 +22,9 @@ public class Menu {
     printStream.println("-------------------------");
   }
 
-  public void selectOption(int index) {
-    welcome.sayWelcome();
+  public void selectOption() {
     displayMenu();
+
     String input = inputReader.getUserInput();
 
     while (!input.equals("0")) {
