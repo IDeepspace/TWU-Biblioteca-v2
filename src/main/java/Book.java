@@ -52,8 +52,7 @@ public class Book {
     this.year = year;
   }
 
-  @Override
-  public String toString(){
+  public String detailInfo(){
     return String.format("%s, %s, %s\n",name, author, year);
   }
 

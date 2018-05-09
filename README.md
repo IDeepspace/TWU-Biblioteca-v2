@@ -2,7 +2,7 @@
 
 ### Business Case
 
-The Bangalore Public Library has approached us to design and implement a Library Management System for them. Based on their requirements, we have decided to develop a new system named Biblioteca. Since the library has a large list of requirements, we will be making multiple releases of Biblioteca, with each release incrementally adding more functionality. 
+The Bangalore Public Bookstore has approached us to design and implement a Bookstore Management System for them. Based on their requirements, we have decided to develop a new system named Biblioteca. Since the library has a large list of requirements, we will be making multiple releases of Biblioteca, with each release incrementally adding more functionality. 
 
 In order to easily add more functionality in the future as well as maintain a high level of quality, Biblioteca will be built using a test driven approach.
 
@@ -33,7 +33,7 @@ The requirements for the first release of Biblioteca are given below.
 
 ## 二、Assignment: Biblioteca Release 2
 
-The Bangalore Public Library is quite happy with the first release of Biblioteca. Time for us to move on to the next release! This release of Biblioteca needs to have two major features:
+The Bangalore Public Bookstore is quite happy with the first release of Biblioteca. Time for us to move on to the next release! This release of Biblioteca needs to have two major features:
 
 ### User Stories
 

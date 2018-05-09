@@ -14,7 +14,7 @@ public class BookTest {
 
   @Test
   public void should_book_have_name_author_publishedYear() {
-    assertEquals(book.toString(), "The Power of Habit, Charles Duhigg, 2013\n");
-}
+    assertEquals(book.detailInfo(), "The Power of Habit, Charles Duhigg, 2013\n");
+  }
 
 }
