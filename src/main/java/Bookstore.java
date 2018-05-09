@@ -11,10 +11,18 @@ public class Bookstore {
     this.printStream = printStream;
   }
 
-
   public void printBooks() {
     for (Book book : bookList) {
       printStream.println(book.detailInfo());
     }
+  }
+
+  public void displayBookList() {
+  }
+
+  public void checkoutBook() {
+  }
+
+  public void returnBook() {
   }
 }
