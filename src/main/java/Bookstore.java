@@ -15,12 +15,6 @@ public class Bookstore {
     this.checkOutBooks = checkOutBooks;
   }
 
-  public void printBooks() {
-    for (Book book : bookList) {
-      printStream.println(book.detailInfo());
-    }
-  }
-
   public void displayBookList() {
     for (int i = 1; i <= bookList.size(); i++) {
       printStream.print(i + ". ");
@@ -30,7 +24,9 @@ public class Bookstore {
 
   public void checkoutBook() {
     printStream.println("Which book would you like to check out?");
+
     displayBookList();
+
     String userInput = inputReader.getUserInput();
     int index = Integer.parseInt(userInput) - 1;
     if (index >= 0 && index < bookList.size()) {
