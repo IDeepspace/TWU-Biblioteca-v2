@@ -13,7 +13,7 @@ public class BibliotecaApp {
 
     InputReader inputReader = new InputReader(printStream, reader);
 
-    Bookstore bookstore = new Bookstore(bookList(), printStream, inputReader,checkOutBookList());
+    Bookstore bookstore = new Bookstore(bookList(), printStream, inputReader,checkOutBookList(), movieList, checkOutMovies, userList);
 
     Menu menu = new Menu(bookstore, printStream, inputReader);
 
