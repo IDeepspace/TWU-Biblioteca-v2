@@ -18,11 +18,15 @@ public class Menu {
     printStream.println("1. List Books");
     printStream.println("2. Checkout Book");
     printStream.println("3. Return Book");
+    printStream.println("4. List Movies");
+    printStream.println("5. Checkout Movie");
+    printStream.println("6. Return Movie");
+    printStream.println("7. Get User Information");
     printStream.println("0. Quit");
     printStream.println("-------------------------");
   }
 
-  public void selectOption() {
+  public void selectOption(int index) {
     displayMenu();
 
     String input = inputReader.getUserInput();
@@ -34,7 +38,17 @@ public class Menu {
         bookstore.checkoutBook();
       } else if (input.equals("3")) {
         bookstore.returnBook();
-      } else {
+      } else if (input.equals("4")){
+        bookstore.displayMovieList();
+      }else if(input.equals("5")) {
+        bookstore.checkoutMovie();
+      }else if (input.equals("6")) {
+        bookstore.returnMovie();
+      }else if (input.equals("7")) {
+        bookstore.displayUserInformation(index);
+        printStream.println("Select a valid option!");
+      }
+      else {
         printStream.println("Select a valid option!");
       }
       displayMenu();
